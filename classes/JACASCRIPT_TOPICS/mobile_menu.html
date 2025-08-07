@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Menu</title>
+    <Style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-color:ghostwhite;
+        }
+        .parent{
+            width: 200px;
+            height: 100svh;
+            background-color:burlywood;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            position: absolute;
+            left: -200px;
+            transition: left 0.5s ease-out;
+            top: 0px;
+            cursor: pointer;
+        }
+        .opt{
+            padding: 10px 0px;
+            border-bottom: 1px solid black;
+            border-radius: 10px;
+            font-size: 20px;
+            width: 100%;
+            
+        }
+        .icon1{
+            font-size: 30px;
+            margin: 10px;
+        }
+        .opt:hover{
+            background-color: rgb(205, 150, 78);
+        }
+        .icon2{
+            font-size: 40px;
+            width: fit-content;
+        }
+
+    </Style>
+</head>
+<body>
+    <button class="icon1" onclick="Open()">&#9776;</button>
+    <div class="parent" >
+        <div class="icon2" onclick="Close()">&times;</div>
+        <div class="opt">Home</div>
+        <div class="opt">About us</div>
+        <div class="opt">Contact</div>
+        <div class="opt">Profile</div>
+        <div class="opt">Settings</div>
+    </div>
+
+    <script>
+        function Close()
+        {
+            document.getElementsByClassName("parent")[0].style="left:-200px;";
+        }
+        function Open()
+        {
+            document.getElementsByClassName("parent")[0].style="left:0px;";
+        }
+    </script>
+</body>
+</html>

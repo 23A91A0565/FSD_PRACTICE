@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title> 
+    <style>
+        img{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <p>Paragraph Tag 1</p>
+    <p>Paragraph Tag 2</p>
+    <div class="demo">div-demo</div>
+    <span class="demo">span-demo</span>
+    <div id="phani">id-phani</div>
+
+    <img src="Quickfix.png" class="images">
+    <button onclick="fun()">Click me</button>
+
+
+    <script>
+        // Retrieving the data
+        console.log(document.getElementsByTagName("p"));
+        console.log(document.getElementsByClassName("demo"));
+        console.log(document.getElementById("phani"))
+        console.log(document.querySelector("p"));
+        console.log(document.querySelectorAll("p"));
+        console.log(document.querySelector(".demo"));
+        console.log(document.querySelectorAll(".demo"));
+        console.log(document.querySelector("#phani"));
+
+        //Updating the data
+        document.getElementById("phani").innerText="Phani kumar";
+        document.getElementById("phani").innerHTML="Phani kumar";
+        function fun(){
+        document.getElementsByTagName('img')[0].src="http://127.0.0.1:5501/WEB_APPLICATION/classes/JACASCRIPT/photo2.jpg";//for updating the source link
+
+        document.getElementsByTagName('img')[0].className="my_image";//for updating the class name
+
+        document.getElementsByTagName('img')[0].style="border:5px solid black;";//for updating the styles
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /*Absolute position */
+        /* position will be calculated by parent origin or original position */
+        .parent1{
+            width: 100%;
+            height: 300px;
+            background-color: aqua;
+            position: relative;
+        }
+        .child11{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(170, 28, 28);
+        }
+        .child12{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(25, 1, 128);
+            position: absolute;
+            bottom: 50px;
+            left: 150px;
+        }
+        .child13{
+            width: 100px;
+            height: 100px;
+            background-color: rgb(168, 213, 33);
+        }
+
+        /* Sticky position */
+        /* combination of relative and fixed */
+        .sticky{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(86, 25, 179);
+            position: sticky;
+            top: 100px;
+        }
+
+        /* Relative position*/
+        /* position will be calculated form its origin or original position */
+        .parent2{
+            width: 100%;
+            height: 170px;
+            background-color: rgb(158, 32, 101);
+        }
+        .child21{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            position: relative;
+            top: 50px;
+            /* top=-50px is equal to bottom=50px*/
+            left: -90px;
+            /* left=-90px is equal to right=90px*/
+        }
+
+        /* Fixed position */
+        /* position will be calculated from screen or body */
+        .parent3{
+            width: 100%;
+            height: 800px;
+            background-color: rgb(222, 70, 24);
+        }
+        .child31{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            position:fixed;
+            top: 520px;
+            right: 0px;
+        }
+
+        /* static position */
+        /* Default value of position we no need to mention seperately */
+
+    </style>
+    <title>Positions</title>
+</head>
+<body>
+     <div class="parent1">
+        <div class="child11">
+        </div>
+        <div class="child12">
+        </div>
+        <div class="child13">
+        </div>
+     </div>
+
+     <div class="sticky"></div>
+
+     <div class="parent2">
+        <div class="child21">
+        </div>
+     </div>
+
+     <div class="parent3">
+        <div class="child31">
+        </div>
+     </div>
+     
+</body>
+</html>

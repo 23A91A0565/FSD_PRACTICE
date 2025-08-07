@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .parent{
+            width: 200px;
+            border: 1px solid red;
+        }
+        .child{
+            width: 50%;
+            border: 1px solid green;
+        }
+        .h1{
+            border: 1px solid yellowgreen;
+        }
+        .h2{
+            border-top: 2px;
+            border-top-color: rgb(22, 210, 147);
+            border-top-style: dotted;
+
+            border-right: 3px dashed pink;
+
+            border-bottom: 4px double yellow;
+
+            border-left: 5px groove violet;
+        }
+        .radius1{
+            border: 5px solid red;
+            border-radius: 10px;
+        }
+        .radius2{
+            border: 5px solid red;
+            border-radius: 20%;
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid green;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 40px;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 30px;
+        }
+        .view-height{
+            width: 100%;
+            height: 100vh;
+            border: 5px solid green;
+        }
+        .system-view-height{
+            width: 100%;
+            height: 100svh;
+            border: 6px solid rebeccapurple;
+        }
+        .parent2{
+            width: 250px;
+            height: 250px;
+            border: 3px solid rgb(188, 209, 26);
+        }
+        .child2{
+            width: calc(100% - 100px);
+            height: calc(100% - 100px);
+            border: 3px solid rgb(21, 36, 195);
+        }
+    </style>
+    <title>Borders</title>
+</head>
+<body>
+    <!--Borders-->
+      <div class="parent">
+      <img class="child" src="../photo.png">
+      </div>
+      <h1 class="h1">phani</h1>
+      <h1 class="h2">phani</h1>
+      <!--Border radius-->
+      <!--maximum radius should be half of the height-->
+      <h2 class="radius1">Phani kumar</h2>
+      <h2 class="radius2">Phani kumar</h2>
+      <div class="box"></div>
+      <div class="view-height"></div>
+      <div class="system-view-height"></div>
+      <div class="parent2">
+        <div class="child2"></div>
+      </div>
+</body>
+</html>

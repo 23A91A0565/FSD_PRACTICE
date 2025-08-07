@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIndow Actions</title>
+    <style>
+        .child{
+            width: 100%;
+            height: 150svh;
+        }
+    </style>
+    <script>
+        function fun(){
+            console.log("Event Triggerred");
+        }
+        function fun2(){
+            console.log("Window resized");
+        }
+
+    </script>
+</head>
+<body onfocus="fun()" onblur="fun()" onscroll="alert('Scrolled')" onresize="fun2()" onload="alert('Loading')">
+    <div class="child"></div>
+</body>
+</html>

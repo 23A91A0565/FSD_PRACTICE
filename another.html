@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #7caad8;
+}
+
+/* Navbar */
+nav {
+  background-color: #2279d6;
+  color: rgb(225, 168, 168);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+nav .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 110px 40px;
+  background-color: #eaf4ff;
+}
+
+.hero h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #322f2f;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Features Section */
+.features {
+  padding: 40px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  background: #8ccdcd;
+}
+
+.feature {
+  max-width: 300px;
+  background: #f0f8ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.feature h3 {
+  margin-bottom: 10px;
+  color: #007bff;
+}
+
+.feature p {
+  color: #607684;
+}
+
+/* Footer */
+footer {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+  </style>
+  <title>Hospital Home - HealthCare</title>
+  <link rel="stylesheet" href="careslot.css">
+</head>
+<body>
+
+  <nav>
+    <div class="logo">🏥 HealthCare</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="auth.html">Login</a></li>
+      <li><a href="auth.html">Sign Up</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h1>Welcome to Care Slot </h1>
+    <p>Your health is our top priority. Book appointments, get specialist care, and track your health easily.</p>
+    <div class="buttons">
+      <a href="auth.html" class="btn login-btn">Login</a>
+      <a href="auth.html" class="btn signup-btn">Sign Up</a>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Book Appointments</h3>
+      <p>Schedule doctor visits at your convenience using our quick and simple online booking system.</p>
+    </div>
+    <div class="feature">
+      <h3>Expert Doctors</h3>
+      <p>Get treated by experienced and qualified medical professionals across multiple specialties.</p>
+    </div>
+    <div class="feature">
+      <h3>24/7 Support</h3>
+      <p>Reach out to our healthcare team any time — we're here to assist you day and night.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 HealthCare Hospital. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var x=[1,2,3,4,5,6,7,8];
+        var y=x.map(num => num*num);
+        var z=x.filter(n=>n%2!=0)
+        var a=x.slice(1,5);
+        var b=x.splice(2,1,100);
+        var c=x.reduce((a,b)=>a+b);
+        console.log("Map: ",y);
+        console.log("Filter: ",z);
+        console.log("Slice: ",a);
+        
+        console.log("Splice: ",b);
+        console.log("Original array after splice:",x);
+        console.log("Reduce:",c);
+       
+    </script>
+</head>
+<body>
+    <button onclick="pop()">Subscribe</button>
+        <script>
+         function pop(){
+            alert("Subscribed!");
+            console.log("You are Subscribed");
+        }
+    </script>
+</body>
+</html>

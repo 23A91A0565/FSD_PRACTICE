@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .demo1{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            animation-name: myanimation;
+            animation-duration: 2s;
+
+            animation-timing-function: linear; /* animation should be happen in a linear motion */
+            /* animation-timing-function: ease-in;
+            animation-timing-function: ease-out;
+            animation-timing-function: ease-in-out; */
+
+            animation-delay: 2s;
+
+            animation-iteration-count: infinite;
+
+            /* the direction of animation */
+            animation-direction: alternate; /* both direction will applies the animation */
+            /* animation-direction: reverse;
+            animation-direction: alternate-reverse; */
+
+            /* short end property */
+            animation: myanimation 2s linear 2s infinite alternate ;
+ 
+            position: relative;
+        }
+
+        @keyframes myanimation{
+            from{
+                background-color: black;
+                left: 0px;
+                border-radius: 0px;
+            }
+            to{
+                background-color: red;
+                left: 600px;
+                border-radius: 50% ;
+            }
+        }
+
+        /* For Multiple stages */  
+        .demo2{
+            width: 200px;
+            height: 200px;
+            background-color: black;
+            animation-name: myanimation2;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            position: relative;
+        }
+
+        @keyframes myanimation2{
+            0%{
+                background-color: black;
+            }
+            50%{
+                background-color: red;
+            }
+            100%{
+                background-color: yellow;
+            }
+        }
+    </style>
+    <title>Animations</title>
+</head>
+<body>
+    <div class="demo1"></div>
+    <div class="demo2"></div>
+</body>
+</html>

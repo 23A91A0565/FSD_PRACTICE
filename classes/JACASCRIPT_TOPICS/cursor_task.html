@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cursor Tracker</title>
+  <style>
+    #circle {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: black;
+      color: white;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 12px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="circle">Move your mouse</div>
+
+  <script>
+    const circle = document.getElementById("circle");
+
+    document.addEventListener("mousemove", function (e) {
+      // Move the circle to the mouse position
+      circle.style.left = e.clientX + "px";
+      circle.style.top = e.clientY +    "px";
+
+      // Show coordinates inside the circle
+      circle.innerText = `X: ${e.screenX}\nY: ${e.screenY}`;
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .a{
+            width: 700px;
+            height: 700px;
+            border: 2px solid red;
+            /*Backgroind-color*/
+            background-color: aquamarine;
+            /*Background-image*/
+            background-image: url(../photo.png);
+            /*avoiding the repeatition of a image*/
+            background-repeat: no-repeat;
+            /*repeting imge in x-direction*/
+            background-repeat: repeat-x;
+            /*repeting imge in y-direction*/
+            background-repeat: repeat-y;
+            /*fixing the image in entire background we use background-size
+            background-size: width height;  */
+            background-size: 100% 100%;
+            /* OR*/   
+            background-size: cover;
+            background-size: contain;
+            /*blurring the background*/
+            filter: blur(5px);
+        }
+        .b{
+            width: 250px;
+            height: 250px;
+            font-size: 40px;
+            border: 2px solid green;
+            background-image: url(../photo.png);
+            background-size: 100% 100%;
+            background-size: cover;
+            background-size: contain;
+            /* different background text designs */
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
+        .c{
+            width: 1150px;
+            height: 1150px;
+            border: 2px solid green;
+            background-image: url(../photo.png);
+            background-repeat: no-repeat;
+            /*arranging the imagre at particular position*/
+            background-position: top left;
+            background-position: top center;
+            background-position: top right;
+            background-position: center left;
+            background-position: center center;
+            background-position: center right;
+            background-position: bottom left;
+            background-position: bottom center;
+            background-position: bottom right;
+        }
+
+    </style>
+    <title>Background</title>
+</head>
+<body>
+    <div class="a">
+        <h1>PHANI</h1>
+    </div>
+    <div class="b">
+        <h1>PHANI</h1>
+    </div>
+    <div class="c">
+        <h1>PHANI</h1>
+    </div>
+</body>
+</html>

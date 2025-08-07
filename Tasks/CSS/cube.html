@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 100svh;
+            perspective: 800px;
+        }
+        .cube{
+            width: 200px;
+            height: 200px;
+            animation: myanimation 5s infinite linear;
+            transform-style: preserve-3d;
+            position: relative;
+        }
+        @keyframes myanimation{
+            100%{
+                transform: rotateX(360deg) rotateY(360deg);
+            }
+        }
+        .cube >div{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            border: 2px solid rgb(205, 25, 16);
+            background-color: white;
+            opacity: 0.8 ;
+
+        }
+        .left{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            transform: rotateY(90deg) translateZ(100px);
+        }
+        .one{
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            background-color: red;
+        }
+        .two{
+             width: 60px;
+            height: 60px;
+             border-radius: 10px;
+            background-color: rgb(56, 179, 32);
+        }
+        .three{
+             width: 60px;
+            height: 60px;
+             border-radius: 10px;
+            background-color: rgb(11, 87, 132);
+        }
+        .four{
+             width: 60px;
+            height: 60px;
+             border-radius: 10px;
+            background-color: rgb(215, 205, 12);
+        }
+        .five{
+            width: 60px;
+            height: 60px;
+             border-radius: 10px;
+            background-color: rgb(11, 56, 179);
+        }
+        .six{
+            width: 60px;
+            height: 60px;
+             border-radius: 10px;
+            background-color: rgb(213, 220, 10);
+        }
+        .seven{
+            width: 60px;
+            height: 60px;
+             border-radius: 10px;
+            background-color: rgb(165, 84, 25);
+        }
+        .eight{
+            width: 60px;
+            height: 60px;
+             border-radius: 10px;
+            background-color: rgb(74, 165, 25);
+        }
+        .nine{
+             width: 60px;
+            height: 60px;
+             border-radius: 10px;
+            background-color: rgb(4, 179, 188);
+        }   
+        .right{
+             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            transform: rotateY(90deg) translateZ(-100px);
+        }
+        .top{
+             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+             transform: rotateX(90deg) translateZ(-100px);
+        }
+        .bottom{
+             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+             transform: rotateX(90deg) translateZ(100px);
+        }
+        .front{
+             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            transform: translateZ(100px);
+        }
+        .back{
+             display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            transform: translateZ(-100px);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="cube">
+        <div class="left">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+        </div>
+        <div class="right">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+        </div>
+        <div class="top">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+        </div>
+        <div class="bottom">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+        </div>
+        <div class="front">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+        </div>
+        <div class="back">
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            <div class="seven"></div>
+            <div class="eight"></div>
+            <div class="nine"></div>
+        </div>
+    </div>
+</body>
+</html>

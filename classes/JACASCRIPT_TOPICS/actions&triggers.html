@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun(){
+            alert("Hello");
+        }
+        function fun2(){
+            alert("Hey");
+        }
+    </script>
+</head>
+<body>
+    <button onclick="fun()">
+        Hello
+    </button>
+    <button onmouseover="fun2()">
+        Hey
+    </button>
+    <button onmouseenter="fun()">
+        A
+    </button>
+    <button onmouseleave="fun()">
+        B
+    </button>
+    <button ondblclick="console.log('C')">C</button>
+    <input type="text" onkeyup="console.log('h')">
+    <input type="text" onkeypress="console.log('i')">
+    <input type="text" onkeydown="console.log('j')">
+</body>
+</html> 

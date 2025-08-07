@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .first{
+            font-size: 96px;
+        }
+        .second{
+            font-size: 1in;
+        }
+        .third{
+            font-size: 12pt;
+        }
+        .fourth{
+            /*  12*1.333=15.996*/ 
+            font-size: 15.996px;
+        }
+        .img1{
+            width: 100px;
+            height: 100px;
+        }  
+        .parent{
+            width: 200px;
+            border: 1px solid red;
+        }
+        .child{
+            width: 50%;
+            border: 1px solid green;
+        }
+    </style>
+    <title>Units</title>
+</head>
+<body>
+    <!-- 1px=1px  1pt(point)=1.333px  1in(inch)=96px -->
+     <div class="first">HAI</div>
+     <div class="second">HAI</div>
+     <div class="third">HELLO</div>
+     <div class="fourth">HELLO</div>
+     <!-- [W,H]=[width,heigth] -->
+      <!--Absolute values {pixals,point,inches}-->
+      <img class="img1" src="../photo.png" alt="unable to open">
+      <!--relative values { percentage(%)}-->
+      <div class="parent">
+      <img class="child" src="../photo.png">
+      </div>
+</body>
+</html>

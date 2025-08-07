@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Table creation</title>
+</head>
+<body>
+  <input type="number" required placeholder="Rows" />
+  <input type="number" required placeholder="Columns" />
+  <button onclick="fun()">Get Table</button>
+
+  <script>
+    function fun() {
+      let rows = parseInt(document.getElementsByTagName("input")[0].value);
+      let cols = parseInt(document.getElementsByTagName("input")[1].value);
+
+      let tab = document.createElement("table");
+      tab.setAttribute("border", "2px");
+      for (let i = 0; i < rows; i++) {
+        let r = document.createElement("tr");
+
+        for (let j = 0; j < cols; j++) {
+          let c = document.createElement("td");
+          c.style.padding = "20px";
+          r.appendChild(c);
+        }
+
+        tab.appendChild(r);
+      }
+
+      document.body.appendChild(tab);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .parent{
+            transform-style: preserve-3d;
+            perspective: 100px;
+            /* perspective-origin: left; */
+            height: 300px;
+            border: 2px solid black;
+        }
+        .child{
+            width: 200px;
+            height: 200px;
+            color: white;
+            background-color: red;
+            text-align: justify;
+            padding: 10px;
+            transform: rotateY(20deg);
+            transform-origin: -100px -100px;
+            animation-name: myanimation;
+            animation-duration: 9s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes myanimation{
+            0%{
+                transform: rotateX(0deg);
+            }
+            100%{
+                transform: rotateX(360deg);
+            }
+        }
+    </style>
+    <title>3D</title>
+</head>
+<body>
+    <div class="parent">
+        <div class="child">phani kumar hjd adbad jeahf scxbv ewru kgfds bcxzm bvcxz eur itrui jkdsd aeoiu sdhbd vxcnbm e or pe bxdnbv xbjfdvb.</div>
+    </div>
+</body>
+</html>

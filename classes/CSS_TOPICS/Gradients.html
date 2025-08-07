@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .first{
+            width: 300px;
+            height: 300px;
+            /* 8 different directions */
+            background-image: linear-gradient(red,black);
+            background-image: linear-gradient(to right,red,yellow,green,rgb(146, 20, 41));
+            background-image: linear-gradient(to left,red,yellow,green,rgb(166, 26, 49));
+            background-image: linear-gradient(to top,red,yellow,green,rgb(151, 30, 50));
+            background-image: linear-gradient(to top right,red,yellow,green,rgb(151, 30, 50));
+            background-image: linear-gradient(to top left,red,yellow,green,rgb(151, 30, 50));
+            background-image: linear-gradient(to bottom left,red,yellow,green,rgb(151, 30, 50));
+            background-image: linear-gradient(to bottom right,red,yellow,green,rgb(143, 16, 147));
+            
+        }
+
+        .second{
+            width: 300px;
+            height: 300px;
+            background-image: radial-gradient(red,green,yellow); 
+            background-image: radial-gradient(red,green 10%,yellow 60%);
+            background-image: repeating-radial-gradient(red 5%,green 15%,yellow 25%);
+        }
+
+        .Third{
+            width: 300px;
+            height: 300px;
+            background-image: conic-gradient(red,green,yellow);
+            background-image: conic-gradient(at 30% 30%,red,green,yellow);
+        }
+
+    </style>
+    <title>Gradients</title>
+</head>
+<body>
+    <!--Linear Gradient-->
+    <!-- It requires mininmum of two and maximum infinity parameter colors-->
+    <!--  syntax :- linear-gradient ( to direction , color1 , color2 ,-----)  -->
+    <div class="first"></div>
+
+    <!-- radial Gradient -->
+     <!-- defaulty it will start from center -->
+    <!--  syntax :- radial-gradient (color1 percentage, color2 percentage,-----)  -->
+    <div class="second"></div>
+
+    <!-- conical Gradient-->
+    <!--  syntax :- conic-gradient ( at width height, color1, color2,-----)  -->
+    <div class="Third"></div>
+</body>
+</html>

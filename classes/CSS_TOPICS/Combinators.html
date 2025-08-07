@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* combinator selector = " "(space)  */
+        /* selects the tags in any depeer level */
+       .phani h1{
+            color: red;
+        }
+
+        /* combinator selector = ">"  */
+        /* selects the tags in first level only or direct childrens only */
+        .phani>h1{
+            color: yellow;
+        }
+
+        /* combinator selector = "+"  */
+        /* selects the one siblings right after the tag */
+        div + p{
+            color: blue;
+        }
+
+        /* combinator selector = "~"  */
+        /* selects the all siblings right after the tag */
+        div ~ p{
+            color: darkgreen;
+        }
+
+    </style>
+
+    <title>Combinators</title>
+</head>
+<body>
+    <h1>top outer h1</h1>
+    <div class="phani">
+        <h1>First</h1>
+        <h1>Second</h1>
+        <div>
+            <h1>Third</h1>
+        </div>
+
+        <p>Phani kumar</p>
+    </div>
+    <p>+ selector</p>
+    <p>+ selector</p>
+    <h1>bottom outer h1</h1>
+</body>
+</html>

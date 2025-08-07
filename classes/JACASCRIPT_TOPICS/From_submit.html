@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Submitting</title>
+    <script>
+        function fun(para){
+            console.log(para,'Selected');
+        }
+        function fun2(){
+            console.log(event.target.value);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label>First Name:</label>
+        <input type="text" placeholder="Enter a Firstname" required onchange="fun2()">
+        <br>
+        <label>Last Name:</label>
+        <input type="text" placeholder="Enter a Lastname" required onchange="fun2()">
+        <br>
+         <label>Phone Number:</label>
+        <input type="number" placeholder="Enter a Phone Number" required onchange="fun2()">
+        <br>
+         <label>Email:</label>
+        <input type="email" placeholder="Enter Email" required onchange="fun2()">
+        <br>
+        <input type="radio" name="gender" onchange="fun('male')">
+        <label>Male</label>
+        <input type="radio" name="gender" onchange="fun('Female')">
+        <label>Female</label>
+        <input type="radio" name="gender" onchange="fun('Other')">
+        <label>Other</label>
+        <br>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+
+
+    </form>
+</body>
+</html>
